@@ -1,0 +1,12 @@
+.layout {
+  &__bg {
+    background-image: url("../../../../assets/images/hospital_bg.png");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.4;
+  }
+}
