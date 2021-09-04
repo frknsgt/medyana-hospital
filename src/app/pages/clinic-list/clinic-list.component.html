@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pr-2">
+      <mat-form-field class="w-100">
+        <mat-label>Search</mat-label>
+        <input
+          matInput
+          type="text"
+          [(ngModel)]="searchText"
+          (keypress)="paginationConfig.currentPage = 1"
+          placeholder="Enter Words for Search"
+          name="SearchText"
+        />
+        <a type="button" matSuffix [attr.aria-label]="'Search'">
+          <mat-icon class="text-dark">search</mat-icon>
+        </a>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row m-0">
+    <div
+      class="col mx-auto clinic__card px-3"
+      *ngFor="
+        let clinic of clinics | filter: searchText | paginate: paginationConfig
+      "
+    >
+      <a
+        [routerLink]="['/clinic/equipments', clinic.Id]"
+        class="text-decoration-none"
+      >
+        <div class="m-3 p-0 text-center clinic__content border">
+          <img class="clinic__img" src="{{ clinic.ImageUrl }}" />
+          <h4 class="text-dark mt-2">{{ clinic.ClinicName }}</h4>
+          <h5 class="mb-4 text-muted">
+            {{ clinic.CountyName }}
+          </h5>
+          <h6>Clinic Detail</h6>
+        </div>
+      </a>
+    </div>
+  </div>
+  <app-pagination [config]="paginationConfig"></app-pagination>
+</div>

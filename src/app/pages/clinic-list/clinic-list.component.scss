@@ -1,0 +1,28 @@
+.clinic {
+  &__content {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    &:hover {
+      box-shadow: 0px 3px 3px 3px rgb(131, 131, 131);
+    }
+    height: 330px;
+  }
+  &__img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 241px;
+    height: 200px;
+    cursor: pointer;
+  }
+  &__card {
+    max-width: 305px;
+    width: 305px;
+  }
+}
