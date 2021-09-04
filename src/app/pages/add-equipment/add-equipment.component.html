@@ -1,0 +1,98 @@
+<div class="container">
+  <form #equipmentForm="ngForm" (ngSubmit)="onSave(equipmentForm)">
+    <div class="row mt-3">
+      <div class="col-12">
+        <div class="card card-outline card-info">
+          <div class="card-body">
+            <h2>{{ title }}</h2>
+            <div class="row">
+              <div class="col-12 form-group">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Equipment Name</mat-label>
+                  <input
+                    matInput
+                    type="text"
+                    placeholder="Enter Equipment Name"
+                    pattern="^[A-Za-zÇçÖöŞşÜüĞğİı ]+$"
+                    name="EquipmentName"
+                    #EquipmentName="ngModel"
+                    [(ngModel)]="_model.EquipmentName"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="EquipmentName.invalid && EquipmentName.touched"
+                  >
+                    Equipment Name field must be filled</mat-error
+                  >
+                </mat-form-field>
+              </div>
+              <div class="col-12 form-group">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Price</mat-label>
+                  <input
+                    matInput
+                    type="text"
+                    placeholder="Enter Price (only number and value > 0.009)"
+                    pattern="^[0-9.]+$"
+                    name="Price"
+                    #Price="ngModel"
+                    [(ngModel)]="_model.Price"
+                    required
+                  />
+                  <mat-error *ngIf="Price.invalid && Price.touched">
+                    Prize field must be filled (only number and value >
+                    0.009)</mat-error
+                  >
+                </mat-form-field>
+              </div>
+              <div class="col-12 form-group">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Unit</mat-label>
+                  <input
+                    matInput
+                    type="text"
+                    placeholder="Enter Unit (only number and value > 0)"
+                    pattern="^[0-9]+$"
+                    name="Unit"
+                    #Unit="ngModel"
+                    [(ngModel)]="_model.Unit"
+                    required
+                  />
+                  <mat-error *ngIf="Unit.invalid && Unit.touched">
+                    Unit field must be filled (only number and value > 0)
+                    0)</mat-error
+                  >
+                </mat-form-field>
+              </div>
+              <div class="col-12 form-group">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Clinic</mat-label>
+                  <select
+                    matNativeControl
+                    name="ClinicID"
+                    #ClinicID="ngModel"
+                    ng-model="ClinicIDSelect"
+                    [(ngModel)]="_model.ClinicID"
+                    required
+                  >
+                    <option *ngFor="let clinic of clinics" [value]="clinic.Id">
+                      {{ clinic.ClinicName }}
+                    </option>
+                  </select>
+                  <mat-error *ngIf="ClinicID.invalid && ClinicID.touched">
+                    Choose the clinic
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-info w-100 text-light">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
