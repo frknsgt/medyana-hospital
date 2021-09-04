@@ -1,0 +1,257 @@
+{
+  "clinics": [
+    {
+      "Id": 0,
+      "CountyName": "Kadıköy / İstanbul",
+      "ClinicName": "Marmara Veteriner Kliniği",
+      "ImageUrl": "https://uploads-ssl.webflow.com/5f2c201d6ff41f762a67ed8c/601c42c29844cf3e1e543419_slasharchitects-Clinic-29-02.jpg"
+    },
+    {
+      "Id": 1,
+      "CountyName": "Karşıyaka / İzmir",
+      "ClinicName": "Vera Klinik",
+      "ImageUrl": "https://www.veraclinic.net/wp-content/uploads/2020/06/services-big-bg.jpg"
+    },
+    {
+      "Id": 2,
+      "CountyName": "Nişantaşı / İstanbul",
+      "ClinicName": "Gc Klinik",
+      "ImageUrl": "https://gcclinic.com.tr/wp-content/uploads/2019/05/gc-clinic-002.jpg"
+    },
+    {
+      "Id": 3,
+      "CountyName": "Kızılay / Ankara",
+      "ClinicName": "Da Klinik",
+      "ImageUrl": "https://cdn-uploads.doctoranywhere.com/wp-content/uploads/2021/02/hybrid_clinic_2_copy-12846-1.jpg"
+    },
+    {
+      "Id": 4,
+      "CountyName": "Southern / Afrika",
+      "ClinicName": "Day Clinic Entrance",
+      "ImageUrl": "https://mediclinic.scene7.com/is/image/mediclinic/Wineland-Day-Clinic?_ck=1626881040103"
+    },
+    {
+      "Id": 5,
+      "CountyName": "Toronto",
+      "ClinicName": "The Health Clinic",
+      "ImageUrl": "https://retailinsider.b-cdn.net/wp-content/uploads/2020/08/the-health-clinic-shoppers-exterior.jpg"
+    },
+    {
+      "Id": 6,
+      "CountyName": "Üsküdar / İstanbul",
+      "ClinicName": "İstanbul Klinik",
+      "ImageUrl": "https://www.chicagotribune.com/resizer/YMMaTSk5hrRpYBuo68a6NP_zeU4=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/7OEUXEL2GZEBDFFCHGJRJJPSC4.jpg"
+    },
+    {
+      "Id": 7,
+      "CountyName": "Urla / İzmir",
+      "ClinicName": "My Clinic",
+      "ImageUrl": "https://www.seattlechildrens.org/globalassets/images/clinics/regional-clinics/north-clinic-room-1350.jpg"
+    }
+  ],
+  "equipments": [
+    {
+      "Id": 0,
+      "EquipmentName": "Şırınga",
+      "Price": 2,
+      "Unit": 20000,
+      "ClinicID": 0
+    },
+    {
+      "Id": 1,
+      "EquipmentName": "Sargı Bezi",
+      "Price": 1,
+      "Unit": 1100,
+      "ClinicID": 0
+    },
+    {
+      "Id": 2,
+      "EquipmentName": "Yatak",
+      "Price": 4500,
+      "Unit": 22,
+      "ClinicID": 0
+    },
+    {
+      "Id": 3,
+      "EquipmentName": "Dezenfektan",
+      "Price": 18,
+      "Unit": 250,
+      "ClinicID": 0
+    },
+    {
+      "Id": 4,
+      "EquipmentName": "Röntgen Cihazı",
+      "Price": 25250,
+      "Unit": 2,
+      "ClinicID": 0
+    },
+    {
+      "Id": 5,
+      "EquipmentName": "Serum",
+      "Price": 6,
+      "Unit": 3700,
+      "ClinicID": 0
+    },
+    {
+      "Id": 4,
+      "EquipmentName": "Makas",
+      "Price": 4,
+      "Unit": 250,
+      "ClinicID": 0
+    },
+    {
+      "Id": 5,
+      "EquipmentName": "Ağrı Kesici",
+      "Price": 1.75,
+      "Unit": 6850,
+      "ClinicID": 0
+    },
+    {
+      "Id": 6,
+      "EquipmentName": "Dezenfektan",
+      "Price": 18,
+      "Unit": 300,
+      "ClinicID": 1
+    },
+    {
+      "Id": 7,
+      "EquipmentName": "Röntgen Cihazı",
+      "Price": 25250,
+      "Unit": 1,
+      "ClinicID": 1
+    },
+    {
+      "Id": 8,
+      "EquipmentName": "Şırınga",
+      "Price": 2,
+      "Unit": 2000,
+      "ClinicID": 2
+    },
+    {
+      "Id": 9,
+      "EquipmentName": "Sargı Bezi",
+      "Price": 1,
+      "Unit": 2150,
+      "ClinicID": 2
+    },
+    {
+      "Id": 10,
+      "EquipmentName": "Yatak",
+      "Price": 4500,
+      "Unit": 10,
+      "ClinicID": 2
+    },
+    {
+      "Id": 11,
+      "EquipmentName": "Şırınga",
+      "Price": 2,
+      "Unit": 13200,
+      "ClinicID": 4
+    },
+    {
+      "Id": 12,
+      "EquipmentName": "Sargı Bezi",
+      "Price": 1,
+      "Unit": 110,
+      "ClinicID": 4
+    },
+    {
+      "Id": 13,
+      "EquipmentName": "Yatak",
+      "Price": 4500,
+      "Unit": 5,
+      "ClinicID": 4
+    },
+    {
+      "Id": 14,
+      "EquipmentName": "Dezenfektan",
+      "Price": 18,
+      "Unit": 170,
+      "ClinicID": 4
+    },
+    {
+      "Id": 15,
+      "EquipmentName": "Röntgen Cihazı",
+      "Price": 25250,
+      "Unit": 3,
+      "ClinicID": 4
+    },
+    {
+      "Id": 16,
+      "EquipmentName": "Serum",
+      "Price": 6,
+      "Unit": 1800,
+      "ClinicID": 0
+    },
+    {
+      "Id": 17,
+      "EquipmentName": "Makas",
+      "Price": 4,
+      "Unit": 50,
+      "ClinicID": 4
+    },
+    {
+      "Id": 18,
+      "EquipmentName": "Serum",
+      "Price": 6,
+      "Unit": 400,
+      "ClinicID": 5
+    },
+    {
+      "Id": 19,
+      "EquipmentName": "Makas",
+      "Price": 4,
+      "Unit": 120,
+      "ClinicID": 5
+    },
+    {
+      "Id": 20,
+      "EquipmentName": "Yatak",
+      "Price": 4500,
+      "Unit": 30,
+      "ClinicID": 7
+    },
+    {
+      "Id": 21,
+      "EquipmentName": "Dezenfektan",
+      "Price": 18,
+      "Unit": 475,
+      "ClinicID": 7
+    },
+    {
+      "Id": 22,
+      "EquipmentName": "Röntgen Cihazı",
+      "Price": 25250,
+      "Unit": 1,
+      "ClinicID": 7
+    },
+    {
+      "Id": 23,
+      "EquipmentName": "Serum",
+      "Price": 6,
+      "Unit": 1400,
+      "ClinicID": 7
+    },
+    {
+      "Id": 24,
+      "EquipmentName": "Makas",
+      "Price": 4,
+      "Unit": 330,
+      "ClinicID": 7
+    },
+    {
+      "Id": 25,
+      "EquipmentName": "Ağrı Kesici",
+      "Price": 1.75,
+      "Unit": 4680,
+      "ClinicID": 0
+    },
+    {
+      "Id": 26,
+      "EquipmentName": "Ağrı Kesici",
+      "Price": 1.75,
+      "Unit": 6500,
+      "ClinicID": 6
+    }
+  ]
+}
